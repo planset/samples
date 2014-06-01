@@ -1,0 +1,12 @@
+extends "layout.jade"
+block body
+  if g.user
+    h1 you are logged in as {{ g.user.name }}
+    p
+      a(href=url_for('logout')) Logout
+  else
+    h1 Login
+    p
+      a(href=url_for('login')) Login
+    p
+      a(href=url_for('login_google')) Login with Google Account

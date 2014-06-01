@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>add note</title>
+  </head>
+  <body>
+
+<h3>{{ user_name }}'s notes</h3>
+<ul>
+{% for note in notes.data %}
+<li><a href="{{ url_for('detail_note', id=note.id) }}">{{ note.subject }}</a></li>
+{% endfor %}
+</ul>
+
+  </body>
+</html>
+

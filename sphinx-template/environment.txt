@@ -1,0 +1,45 @@
+﻿====================
+diag extentions
+====================
+
+blockdiag
+======================
+
+.. blockdiag::
+
+    blockdiag VM起動時の流れ {
+      VMが起動 -> vnet -> bridge -> iptables ;
+    }
+
+
+nwdiag
+======================
+
+.. nwdiag::
+    :desctable:
+
+    nwdiag {
+      inet [shape = cloud, description = "インターネット"];
+      inet -- router;
+
+      network private1 {
+        address = "10.1.2.0/24";
+    
+        sv01 [address = 10.1.2.77, description = "sv01"];
+        sv02 [address = 10.1.2.78, description = "sv02"];
+        router [address = 10.1.2.3, description = "家庭用のふつうのルーター"];
+      }
+      network private2 {
+        address = "192.168.10.0/24";
+    
+        sv01 [address = 192.168.10.1];
+        sv02 [address = 192.168.10.2];
+      }
+      network vm_private {
+        address = "192.168.11.0/24";
+    
+        sv01 [address = 192.168.11.3];
+        sv02 [address = 192.168.11.4];
+        vm1 [address = 192.168.11.8, description = "example virtual machine"];
+      }
+    }

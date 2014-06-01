@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var client_id = '115583065169378';
+    var redirect_uri = 'http://localhost:5000/connect/fb/callback/';
+    
+    window.open('https://graph.facebook.com/oauth/authorize?client_id=' + client_id + '&redirect_uri=' + redirect_uri + '&scope=email',
+                '','scrollbars=no,menubar=no,height=400,width=800,resizable=yes,toolbar=no,status=no');
+</script>
+
+</body>
+</html>

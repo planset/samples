@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="3wO-z4-MFR"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="PWM-4r-ewL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="OqP-3Z-n7V"/>
+                                    <constraint firstAttribute="height" constant="50" id="yGD-QY-DGb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scale.png" translatesAutoresizingMaskIntoConstraints="NO" id="l0Y-M7-2eX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Ig-bP-Wlw"/>
+                                    <constraint firstAttribute="width" constant="60" id="XF6-Mp-Fgt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l0Y-M7-2eX" firstAttribute="centerY" secondItem="PWM-4r-ewL" secondAttribute="centerY" type="default" id="2xb-dv-xtD"/>
+                            <constraint firstItem="l0Y-M7-2eX" firstAttribute="centerY" secondItem="3wO-z4-MFR" secondAttribute="centerY" type="default" id="31e-zW-N5S"/>
+                            <constraint firstItem="l0Y-M7-2eX" firstAttribute="centerX" secondItem="PWM-4r-ewL" secondAttribute="centerX" type="default" id="DP2-4i-HQ5"/>
+                            <constraint firstItem="3wO-z4-MFR" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Lnb-5L-3t2"/>
+                            <constraint firstItem="3wO-z4-MFR" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="aj2-lN-R6i"/>
+                            <constraint firstItem="3wO-z4-MFR" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="nS6-NQ-4Vt"/>
+                            <constraint firstItem="3wO-z4-MFR" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="sUg-vB-sJC"/>
+                            <constraint firstItem="l0Y-M7-2eX" firstAttribute="centerX" secondItem="3wO-z4-MFR" secondAttribute="centerX" type="default" id="xPV-8Z-iSq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bubble" destination="PWM-4r-ewL" id="RfW-RF-OYr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="640" height="1096"/>
+        <image name="bubble.png" width="100" height="100"/>
+        <image name="scale.png" width="120" height="120"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

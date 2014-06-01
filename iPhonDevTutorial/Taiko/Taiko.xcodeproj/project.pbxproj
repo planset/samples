@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058CBB081697ABD40021A79E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058CBB071697ABD40021A79E /* UIKit.framework */; };
+		058CBB0A1697ABD40021A79E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058CBB091697ABD40021A79E /* Foundation.framework */; };
+		058CBB0C1697ABD40021A79E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058CBB0B1697ABD40021A79E /* CoreGraphics.framework */; };
+		058CBB121697ABD40021A79E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB101697ABD40021A79E /* InfoPlist.strings */; };
+		058CBB141697ABD40021A79E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 058CBB131697ABD40021A79E /* main.m */; };
+		058CBB181697ABD40021A79E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 058CBB171697ABD40021A79E /* AppDelegate.m */; };
+		058CBB1A1697ABD40021A79E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB191697ABD40021A79E /* Default.png */; };
+		058CBB1C1697ABD40021A79E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB1B1697ABD40021A79E /* Default@2x.png */; };
+		058CBB1E1697ABD40021A79E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB1D1697ABD40021A79E /* Default-568h@2x.png */; };
+		058CBB211697ABD40021A79E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB1F1697ABD40021A79E /* MainStoryboard.storyboard */; };
+		058CBB241697ABD40021A79E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058CBB231697ABD40021A79E /* ViewController.m */; };
+		058CBB2B1697ABDE0021A79E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058CBB2A1697ABDE0021A79E /* AVFoundation.framework */; };
+		058CBB2D1697ABEA0021A79E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058CBB2C1697ABEA0021A79E /* AudioToolbox.framework */; };
+		058CBB2F1697AC0C0021A79E /* taiko.png in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB2E1697AC0C0021A79E /* taiko.png */; };
+		058CBB311697AC1D0021A79E /* taiko.wav in Resources */ = {isa = PBXBuildFile; fileRef = 058CBB301697AC1D0021A79E /* taiko.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		058CBB031697ABD40021A79E /* Taiko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taiko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		058CBB071697ABD40021A79E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		058CBB091697ABD40021A79E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		058CBB0B1697ABD40021A79E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		058CBB0F1697ABD40021A79E /* Taiko-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Taiko-Info.plist"; sourceTree = "<group>"; };
+		058CBB111697ABD40021A79E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		058CBB131697ABD40021A79E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		058CBB151697ABD40021A79E /* Taiko-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taiko-Prefix.pch"; sourceTree = "<group>"; };
+		058CBB161697ABD40021A79E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		058CBB171697ABD40021A79E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		058CBB191697ABD40021A79E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		058CBB1B1697ABD40021A79E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		058CBB1D1697ABD40021A79E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		058CBB201697ABD40021A79E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		058CBB221697ABD40021A79E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		058CBB231697ABD40021A79E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		058CBB2A1697ABDE0021A79E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		058CBB2C1697ABEA0021A79E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		058CBB2E1697AC0C0021A79E /* taiko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taiko.png; sourceTree = "<group>"; };
+		058CBB301697AC1D0021A79E /* taiko.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = taiko.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		058CBB001697ABD40021A79E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058CBB2D1697ABEA0021A79E /* AudioToolbox.framework in Frameworks */,
+				058CBB2B1697ABDE0021A79E /* AVFoundation.framework in Frameworks */,
+				058CBB081697ABD40021A79E /* UIKit.framework in Frameworks */,
+				058CBB0A1697ABD40021A79E /* Foundation.framework in Frameworks */,
+				058CBB0C1697ABD40021A79E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058CBAF81697ABD40021A79E = {
+			isa = PBXGroup;
+			children = (
+				058CBB2C1697ABEA0021A79E /* AudioToolbox.framework */,
+				058CBB2A1697ABDE0021A79E /* AVFoundation.framework */,
+				058CBB0D1697ABD40021A79E /* Taiko */,
+				058CBB061697ABD40021A79E /* Frameworks */,
+				058CBB041697ABD40021A79E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		058CBB041697ABD40021A79E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				058CBB031697ABD40021A79E /* Taiko.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		058CBB061697ABD40021A79E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				058CBB071697ABD40021A79E /* UIKit.framework */,
+				058CBB091697ABD40021A79E /* Foundation.framework */,
+				058CBB0B1697ABD40021A79E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		058CBB0D1697ABD40021A79E /* Taiko */ = {
+			isa = PBXGroup;
+			children = (
+				058CBB161697ABD40021A79E /* AppDelegate.h */,
+				058CBB171697ABD40021A79E /* AppDelegate.m */,
+				058CBB1F1697ABD40021A79E /* MainStoryboard.storyboard */,
+				058CBB221697ABD40021A79E /* ViewController.h */,
+				058CBB231697ABD40021A79E /* ViewController.m */,
+				058CBB0E1697ABD40021A79E /* Supporting Files */,
+			);
+			path = Taiko;
+			sourceTree = "<group>";
+		};
+		058CBB0E1697ABD40021A79E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				058CBB301697AC1D0021A79E /* taiko.wav */,
+				058CBB2E1697AC0C0021A79E /* taiko.png */,
+				058CBB0F1697ABD40021A79E /* Taiko-Info.plist */,
+				058CBB101697ABD40021A79E /* InfoPlist.strings */,
+				058CBB131697ABD40021A79E /* main.m */,
+				058CBB151697ABD40021A79E /* Taiko-Prefix.pch */,
+				058CBB191697ABD40021A79E /* Default.png */,
+				058CBB1B1697ABD40021A79E /* Default@2x.png */,
+				058CBB1D1697ABD40021A79E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		058CBB021697ABD40021A79E /* Taiko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058CBB271697ABD40021A79E /* Build configuration list for PBXNativeTarget "Taiko" */;
+			buildPhases = (
+				058CBAFF1697ABD40021A79E /* Sources */,
+				058CBB001697ABD40021A79E /* Frameworks */,
+				058CBB011697ABD40021A79E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taiko;
+			productName = Taiko;
+			productReference = 058CBB031697ABD40021A79E /* Taiko.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		058CBAFA1697ABD40021A79E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = dkpyn;
+			};
+			buildConfigurationList = 058CBAFD1697ABD40021A79E /* Build configuration list for PBXProject "Taiko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 058CBAF81697ABD40021A79E;
+			productRefGroup = 058CBB041697ABD40021A79E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				058CBB021697ABD40021A79E /* Taiko */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		058CBB011697ABD40021A79E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058CBB121697ABD40021A79E /* InfoPlist.strings in Resources */,
+				058CBB1A1697ABD40021A79E /* Default.png in Resources */,
+				058CBB1C1697ABD40021A79E /* Default@2x.png in Resources */,
+				058CBB1E1697ABD40021A79E /* Default-568h@2x.png in Resources */,
+				058CBB211697ABD40021A79E /* MainStoryboard.storyboard in Resources */,
+				058CBB2F1697AC0C0021A79E /* taiko.png in Resources */,
+				058CBB311697AC1D0021A79E /* taiko.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		058CBAFF1697ABD40021A79E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058CBB141697ABD40021A79E /* main.m in Sources */,
+				058CBB181697ABD40021A79E /* AppDelegate.m in Sources */,
+				058CBB241697ABD40021A79E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		058CBB101697ABD40021A79E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				058CBB111697ABD40021A79E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		058CBB1F1697ABD40021A79E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				058CBB201697ABD40021A79E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		058CBB251697ABD40021A79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		058CBB261697ABD40021A79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		058CBB281697ABD40021A79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taiko/Taiko-Prefix.pch";
+				INFOPLIST_FILE = "Taiko/Taiko-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		058CBB291697ABD40021A79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taiko/Taiko-Prefix.pch";
+				INFOPLIST_FILE = "Taiko/Taiko-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		058CBAFD1697ABD40021A79E /* Build configuration list for PBXProject "Taiko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058CBB251697ABD40021A79E /* Debug */,
+				058CBB261697ABD40021A79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		058CBB271697ABD40021A79E /* Build configuration list for PBXNativeTarget "Taiko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058CBB281697ABD40021A79E /* Debug */,
+				058CBB291697ABD40021A79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 058CBAFA1697ABD40021A79E /* Project object */;
+}

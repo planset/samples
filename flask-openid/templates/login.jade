@@ -1,0 +1,14 @@
+extends "layout.jade"
+block body
+  h2 Sign in
+  form(action='', method='post')
+    | {% if error %}
+    p.error
+      strong Error:
+      | {{ error }}
+    | {% endif %}
+    p
+      | OpenID:
+      input(type='text', name='openid', size='30')
+      input(type='submit', value='Sign in')
+      input(type='hidden', name='next', value=next)

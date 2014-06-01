@@ -1,0 +1,47 @@
+@option compress: no;
+
+@mixin rounded($side, $radius: 10px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
+#navbar li { 
+  $navbar-width: 800px;
+  $items: 5;
+  $navbar-color: #ce4dd6;
+
+  width: $navbar-width;
+  border-bottom: 2px solid $navbar-color;
+
+  li {
+    float: left;
+    width: $navbar-width/$items - 10px;
+
+    background-color:
+      lighten($navbar-color, 20%);
+    &:hover {
+      background-color:
+        lighten($navbar-color, 10%);
+    }
+  }
+  @include rounded(top); 
+}
+
+#footer { @include rounded(top, 5px); }
+#sidebar { @include rounded(left, 8px); }
+
+h1 {
+  font-size: 28px;
+  color: #f00;
+}
+
+#container {
+  background-color: #fee;
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0f0;
+  }
+}
+

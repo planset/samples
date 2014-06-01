@@ -1,0 +1,58 @@
+===========================
+コンテンツのタイトル
+===========================
+
+章１　○○○○○○
+===========================
+
+::
+
+    mkdir -p ~/src/openstack
+    cd ~/src/openstack
+    
+    git clone https://github.com/openstack/keystone.git
+    cd keystone
+    git checkout essex-4 -b essex-4
+    sudo pip install -r tools/pip-requires
+    python setup.py build
+    sudo python setup.py install --record installfile.txt
+    
+
+項１
+--------------------------
+::
+
+	sudo mkdir /etc/keystone /var/lib/keystone /var/log/keystone
+	sudo useradd -r -d /var/lib/keystone -s /bin/bash keystone
+	sudo cp -p ~/src/openstack/keystone/etc/* /etc/keystone/
+	sudo chown -R keystone:keystone /etc/keystone /var/lib/keystone /var/log/keystone
+
+    
+項２
+--------------------------
+::
+
+	cat << _EOF_ > /etc/init/keystone-all.conf
+	description "Keystone API server"
+	author "Soren Hansen <soren@linux2go.dk>"
+
+	start on (local-filesystems and net-device-up IFACE!=lo)
+	stop on runlevel [016]
+
+	respawn
+
+	exec su - -c "keystone --log-dir=/var/log/keystone --log-file=api.log" keystone
+	_EOF_
+
+
+ファイルを読み込んで表示
+---------------------------
+
+
+sample_file
+
+.. literalinclude:: /files/sample_file.txt
+
+logging.cnfは変更なし。
+
+

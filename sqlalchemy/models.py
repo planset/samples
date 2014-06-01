@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.schema import UniqueConstraint
 
 Base = declarative_base()
 
@@ -26,7 +27,7 @@ class User(Base):
 
 class Image(Base):
     __tablename__ = 'images'
-    __table_args__ = {'mysql_engine':'InnoDB'}
+    __table_args__ = ((UniqueConstraint(Image.filepath)), {'mysql_engine':'InnoDB'})
 
     id = Column(Integer, primary_key=True)
     filename = Column(String(255))
