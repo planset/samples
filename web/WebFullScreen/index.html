@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fulscreen sample</title>
+    <style type="text/css">
+        .fullscreen{
+            width: 100px;
+            height: 100px;
+        }
+    
+        :fullscreen {
+        /* properties */
+        }
+        :-webkit-full-screen {
+        /* properties */
+        }
+        :-ms-fullscreen {
+        /* properties */
+        }
+        :-moz-full-screen {
+        /* properties */
+        }
+        
+        ::backdrop {
+        /* properties */
+        }
+        ::-ms-backdrop {
+        /* properties */
+        }
+        
+    </style>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+   
+
+</head>
+
+<body>
+    <!-- This is out simple HTML Code -->
+    <div class="mainwrapper">
+        <h2>HTML5 FullScreen API Demo</h2>
+        <div id="screen" class="fullscreen">
+            fullscreen sample
+        </div>
+    </div>
+    <a onClick="window.open('index.html', 'test', 'fullscreen=yes')"></a>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
