@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  angular2application1:
+    image: user/angular2application1${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80"
